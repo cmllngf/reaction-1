@@ -55,14 +55,11 @@ window.onload = function() {
   gui.add(opts, 'Save');
 };
 
-let seed;
 let circles = []
 let paletteRGB
 
 function setup() {
   createCanvas(opts.width, opts.height)
-  seed = random(99999)
-  randomSeed(seed)
   background(4);
   paletteRGB = [opts.Color_1,opts.Color_2,opts.Color_3,opts.Color_4,opts.Color_5]
   for (let i = 0; i < opts.Particles; i++) {
